@@ -1,6 +1,6 @@
-import { useState } from "react"; // Import af useState hook til at styre lokal komponent-state
-import { icons } from "../../services/icons"; // Import af ikonressourcer
-import styles from "./activitySection.module.css"; // Import af CSS-moduler til styling
+import { useState } from "react";
+import { icons } from "../../services/icons";
+import styles from "./activitySection.module.css";
 
 function ActivitySection({
   dynamicText, // String der repræsenterer dynamisk tekst, som vises i komponenten
