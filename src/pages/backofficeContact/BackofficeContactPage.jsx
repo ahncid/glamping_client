@@ -87,4 +87,7 @@ export default BackofficeContactPage;
 - loading: Viser en loading-tekst, mens beskederne hentes.
 - error: Viser en fejlmeddelelse, hvis der er opstået en fejl under datahentning.
 - messages.map: Itererer over de hentede beskeder og viser dem i en liste.
+
+- Prøvede her at lave en delete-knap, men kunne ikke få det til at virke. Ser i Postman at der ingen CRUD-handling er for DELETE
+- Så tænkte at det er noget med backenden?
 */

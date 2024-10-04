@@ -1,5 +1,4 @@
 .container {
-  border: 1px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -71,4 +70,30 @@
 
 .readMoreButton:hover {
   background-color: #768c8b;
+}
+@media (min-width: 768px) {
+  .textBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textBox {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 54, 54, 0.56);
+  }
+
+  .background {
+    height: 650px;
+    margin: 0 auto;
+  }
 }
