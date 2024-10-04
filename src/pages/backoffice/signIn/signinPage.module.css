@@ -1,0 +1,39 @@
+.signInContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding-bottom: 25px;
+}
+
+.signInForm div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.signInForm label {
+  margin-bottom: 5px;
+}
+
+.signInForm input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signInButton {
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+}

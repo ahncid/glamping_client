@@ -1,0 +1,36 @@
+.beforeBackofficeContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.linksContainer {
+  margin-top: 20px;
+}
+
+.linkButton {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.linkButton:hover {
+  background-color: #45a049;
+}
+
+.logoutButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logoutButton:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,98 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #33626c;
+  color: #fff;
+  font-family: "Zen Loop", sans-serif;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  background-color: #33626c;
+  margin: 0 auto;
+}
+.formGroup input {
+  border-radius: 50px;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.bookButton {
+  margin-top: 20px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a4f57;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageContainer {
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 40px;
+}
+
+.messageContainer h4,
+h6 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.messageContainer h6 {
+  margin-bottom: 50px;
+}
+.messageContainer p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .formGroup input,
+  .formGroup textarea {
+    width: 400px;
+  }
+}
+
+/* Desktop: Skærme bredere end 1024px */
+@media (min-width: 1024px) {
+  .formGroup input,
+  .formGroup textarea {
+    width: 600px;
+  }
+}

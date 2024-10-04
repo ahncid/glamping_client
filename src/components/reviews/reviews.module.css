@@ -1,0 +1,66 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.reviewList {
+  width: 100%;
+  max-width: 800px;
+  color: #fff;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #829b97;
+  padding: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.reviewText {
+  font-size: 15px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.reviewName {
+  font-family: "Zen Loop", sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+.beforeStay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin: 0;
+  font-family: "Zen Loop", sans-serif;
+}
+.reviewStay {
+  font-family: "Zen Loop", sans-serif;
+  font-size: 32px;
+  margin: 0;
+  text-transform: lowercase;
+  margin-left: 7px;
+}
+@media (min-width: 768px) {
+  .reviewList {
+    max-width: 600px;
+  }
+
+  .review {
+    margin-top: 50px;
+  }
+}
+
+/* Desktop: Skærme bredere end 1024px */
+@media (min-width: 1024px) {
+  .reviewList {
+    max-width: 1024px;
+  }
+}

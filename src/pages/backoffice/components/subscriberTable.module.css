@@ -1,0 +1,70 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  display: block;
+  table-layout: fixed;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word; /* Gør at lange ord eller email brydes */
+}
+
+.table th {
+  background-color: #33626c;
+  color: white;
+  font-size: 14px;
+}
+
+.table td {
+  background-color: #f2f2f2;
+  font-size: 12px;
+}
+
+.table button {
+  margin-right: 5px;
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.table button:hover {
+  background-color: #45a049;
+}
+
+.table select {
+  width: 100%;
+  padding: 6px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .table button {
+    padding: 8px 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .table th,
+  .table td {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .table button {
+    padding: 10px 20px;
+  }
+}

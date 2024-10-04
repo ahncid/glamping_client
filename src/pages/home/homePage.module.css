@@ -1,0 +1,12 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33626c;
+}
+.imageOfGitte {
+  width: 182px;
+  height: 176px;
+  display: block;
+  border-radius: 50%;
+}

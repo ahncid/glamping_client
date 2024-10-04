@@ -1,0 +1,140 @@
+.container {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px 0;
+  position: relative;
+
+  color: #fff;
+}
+
+.topBox {
+  padding: 20px;
+  background-color: #c5b496;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  z-index: 3;
+  margin: 0 20px;
+  top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.background {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 54, 54, 0.56);
+  z-index: 2;
+}
+
+.textAndIconContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #33626c;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  align-items: center;
+  padding: 20px;
+  margin-top: -40px;
+  z-index: 3;
+  position: relative;
+}
+.contentContainer {
+  background-color: #33626c;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin: 15px;
+  padding-bottom: 10px;
+}
+
+.leftText {
+  margin: 10px;
+}
+.leftText p {
+  margin: -5px 0;
+  font-size: 32px;
+  font-family: "Zen Loop", sans-serif;
+}
+
+.icon {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.readMoreButton {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #33626c;
+  color: white;
+  font-family: "Zen Loop", sans-serif;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  width: 90%;
+}
+
+.readMoreButton:hover {
+  background-color: #768c8b;
+}
+
+.expandedText {
+  padding: 20px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .topBox {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contentContainer {
+    max-width: 600px;
+    margin: auto;
+  }
+  .background {
+    max-width: 600px;
+    margin: auto;
+    margin-top: -25px;
+  }
+}
+
+/* Desktop: Skærme bredere end 1024px */
+@media (min-width: 1024px) {
+  .topBox {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .contentContainer {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .background {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

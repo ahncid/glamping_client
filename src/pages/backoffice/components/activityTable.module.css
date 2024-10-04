@@ -1,0 +1,66 @@
+/* Mobile first styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto; /* Gør tabellen scrollable */
+  display: block; /* Gør tabellen block for at kunne scrolles */
+}
+
+.table th,
+.table td {
+  padding: 8px; /* Reducer padding for mobil */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #33626c;
+  color: white;
+  font-size: 14px; /* Mindre skriftstørrelse på mobil */
+}
+
+.table td {
+  background-color: #f2f2f2;
+  font-size: 12px; /* Mindre skriftstørrelse på mobil */
+}
+
+.table button {
+  margin-right: 5px; /* Reducer margin på mobil */
+  padding: 6px 12px; /* Mindre knapper på mobil */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.table button:hover {
+  background-color: #45a049;
+}
+
+/* Media queries for tablets */
+@media (min-width: 768px) {
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 16px; /* Større skriftstørrelse på tablet */
+  }
+
+  .table button {
+    padding: 8px 16px;
+  }
+}
+
+/* Media queries for desktops */
+@media (min-width: 1024px) {
+  .table th,
+  .table td {
+    padding: 12px;
+    font-size: 18px; /* Større skriftstørrelse på desktop */
+  }
+
+  .table button {
+    padding: 10px 20px;
+  }
+}

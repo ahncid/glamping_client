@@ -1,0 +1,79 @@
+.container {
+  position: relative;
+  background-color: #33626c;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #fff;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 54, 54, 0.56);
+  z-index: 2;
+}
+
+.stayTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  z-index: 3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  line-height: 72px;
+}
+
+.customText {
+  font-size: 64px;
+  color: #fff;
+  font-family: "Zen Loop", sans-serif;
+  max-width: 80%;
+  margin: 50px auto;
+}
+
+.stayDescription {
+  font-size: 18px;
+  margin-top: -25px;
+  padding: 5px;
+}
+
+.stayDetailsHeading {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.stayIncludes {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stayIncludes li {
+  font-size: 16px;
+  margin: 0 0;
+}
+
+.container img {
+  position: relative;
+  z-index: 1;
+}

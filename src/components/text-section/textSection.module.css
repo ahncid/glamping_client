@@ -1,0 +1,36 @@
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #33626c;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 50px;
+  position: relative;
+  margin-top: -50px;
+  z-index: 100;
+}
+.title {
+  font-family: "Zen Loop", sans-serif;
+  font-size: 64px;
+}
+.content {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  margin-top: -20px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .content {
+    width: 600px;
+  }
+}
+
+/* Desktop: Skærme bredere end 1024px */
+@media (min-width: 1024px) {
+  .content {
+    width: 1024px;
+  }
+}

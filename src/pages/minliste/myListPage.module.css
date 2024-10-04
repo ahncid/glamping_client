@@ -1,0 +1,25 @@
+.textContainerList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #33626c;
+  padding: 100px;
+  font-size: 64px;
+  margin: 0;
+  color: #fff;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  top: -100px;
+  position: relative;
+  z-index: 1000;
+  margin-bottom: -50px;
+}
+.textContainerList h6 {
+  margin: 0;
+  width: 200px;
+  text-align: center;
+}
+.textContainerList p {
+  margin: 0;
+}

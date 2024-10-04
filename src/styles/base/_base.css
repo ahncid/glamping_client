@@ -1,0 +1,70 @@
+/*
+
+    BASE ROOT STYLES
+
+*/
+@import url("@fontsource/zen-loop"); /* Zen Loop import */
+@import url("@fontsource/nanum-gothic"); /* Nanum Gothic import */
+
+:root {
+  line-height: 1.5;
+
+  font-synthesis: none; /* browser må ikke generere varianter af skrifttyper automatisk (bold, italic) */
+  text-rendering: optimizeLegibility; /* browser prioriterer læsbarhed over ydeevne */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #213547;
+  background-color: #ced3cd;
+
+  /* Definerer primær og sekundær font */
+  --primary-font: "Nanum Gothic", sans-serif;
+  --secondary-font: "Zen Loop", sans-serif;
+
+  font-family: var(--primary-font); /* Standard font for hele dokumentet */
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+
+  BASE ROOT ELEMENT STYLES
+
+*/
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+/* Brug primær font til overskrifter */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+
+/* Brug sekundær font for specifikke elementer, såsom logoer eller branding */
+p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+}
+
+/* input[type='file'] {
+  display: none;
+} */

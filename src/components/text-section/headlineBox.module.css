@@ -1,0 +1,32 @@
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5b496;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 330px;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 72px;
+}
+@media (min-width: 768px) {
+  .box {
+    max-width: 400px;
+  }
+}
+
+/* Desktop: Skærme bredere end 1024px */
+@media (min-width: 1024px) {
+  .reviewList {
+    max-width: 600px;
+  }
+}

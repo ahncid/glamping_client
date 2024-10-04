@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Standard: logo til venstre, menu til højre */
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  background-color: none;
+  color: white;
+  height: 60px;
+  position: fixed;
+  top: 15px;
+  z-index: 1001;
+  width: 100%;
+}
+
+.homeNavbar {
+  justify-content: flex-end; /* Flytter burger-menuen til højre på forsiden */
+}
+
+.logo img {
+  height: 50px;
+}
+
+.burgerMenu {
+  position: relative;
+  z-index: 1001;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #829b97;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  right: 5px;
+
+  margin-left: auto;
+}
+
+.navLinks {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: #829b97;
+}
+
+.navLinks li {
+  margin: 20px 0;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.active {
+  font-weight: bold;
+  color: #ff6347;
+}

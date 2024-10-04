@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  background-color: #33626c;
+  border-bottom-right-radius: 50px;
+  padding-bottom: 100px;
+}
+.seeStays {
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 20px 30px;
+  background-color: #829b97;
+  font-size: 48px;
+  font-family: "Zen Loop", sans-serif;
+}
+
+.seeStays:hover {
+  background-color: #0056b3;
+}
