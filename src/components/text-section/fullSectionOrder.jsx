@@ -51,15 +51,13 @@ export default FullSectionComponent;
 /* 
 1. useNavigate: Bruges til at navigere programmatisk mellem ruter i applikationen. Ved at kalde navigate(destination) sendes brugeren til en ny URL.
    
-2. Props: Komponentens props (title, paragraph1, paragraph2, backgroundImage, destination) gør den dynamisk. Disse modtages som input og bruges til at vise relevant indhold.
+2. Props: Komponentens props (title, numberOfPersons, Price, backgroundImage, destination) gør den dynamisk. Disse modtages som input og bruges til at vise relevant indhold.
    - title: En string, der bruges som overskrift i komponenten.
-   - paragraph1 og paragraph2: Strings, der indeholder to afsnit af tekst, der vises under titlen.
+  
    - backgroundImage: URL til et billede, der bruges som baggrund i komponenten.
    - destination: En string, der repræsenterer ruten/URL'en, som brugeren navigeres til ved klik på "Læs mere"-knappen.
 
 3. handleReadMore: En funktion, der logger destinationen og kalder navigate() for at ændre URL'en, når knappen trykkes.
 
-4. CSS-moduler: Bruges til styling af komponenten. CSS-klasser defineres i 'fullSectionOrder.module.css' og anvendes med 'styles' objektet.
-
-5. Inline styles: Baggrundsbilledet for komponenten sættes dynamisk ved at bruge inline CSS styles (`backgroundImage`) baseret på URL'en sendt som prop.
+4. Inline styles: Baggrundsbilledet for komponenten sættes dynamisk ved at bruge inline CSS styles (`backgroundImage`) baseret på URL'en sendt som prop.
 */
