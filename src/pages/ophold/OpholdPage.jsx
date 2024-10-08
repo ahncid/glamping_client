@@ -19,6 +19,7 @@ Book dit ophold i dag og giv dig selv lov til at fordybe dig i naturen og nyde l
       />
 
       {/* Mapper igennem stays og sender data som props til FullSectionComponent */}
+      {/* Når jeg sender data som props, kan jeg selv styre hvilke data jeg vil vise hvor */}
       {stays.map((stay) => (
         <FullSectionComponent
           key={stay._id}
@@ -34,3 +35,7 @@ Book dit ophold i dag og giv dig selv lov til at fordybe dig i naturen og nyde l
 };
 
 export default OpholdPage;
+
+// stays.map(): Når jeg bruger stays.map(), looper jeg gennem hver enkelt stay i stays-arrayet
+// og kalder FullSectionComponent én gang for hvert stay.
+// Jeg sender data som title, numberOfPersons, price, backgroundImage, og destination som props til hver enkelt instans af FullSectionComponent.
