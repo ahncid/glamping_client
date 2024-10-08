@@ -60,3 +60,10 @@ console.log(greet("Alice")); // Output: "Hello, Alice!"
 // En arrow function er en kortere syntaks til at skrive funktioner i JavaScript. Det er en mere moderne måde at definere funktioner på.
 const sum = (a, b) => a + b;
 console.log(sum(5, 3)); // Output: 8
+
+//useState Bruges til at oprette og håndtere state i funktionelle komponenter ->
+// Det returnerer et array med to værdier: den aktuelle tilstand og en funktion til at opdatere tilstanden.
+// Til at gemme og opdatere tilstand (data, der kan ændres)
+
+//useEffect Bruges til at håndtere sideeffekter i funktionelle komponenter (f.eks. datahentning, tilføje event listeners) ->
+//Til at køre kode, der har bivirkninger, som at hente data, efter renderingen.
