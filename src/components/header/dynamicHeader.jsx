@@ -1,4 +1,4 @@
-import styles from "./dynamicHeader.module.css"; // Importer dit CSS-modul
+import styles from "./dynamicHeader.module.css";
 
 const DynamicHeader = ({ backgroundImage, title }) => {
   return (

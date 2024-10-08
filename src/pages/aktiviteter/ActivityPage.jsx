@@ -25,10 +25,10 @@ const ActivityPage = () => {
     return image.startsWith("http") ? image : `${serverPath}${image}`;
   };
 
-  // Conditional rendering: Viser en loading-besked, hvis data stadig hentes
+  // Conditional rendering: Viser en loading-besked, hvis data stadig hentes - Sand/falsk?
   if (loading) return <p>Loading...</p>;
 
-  // Conditional rendering: Viser fejlbesked, hvis der opstod en fejl under datahentning
+  // Conditional rendering: Viser fejlbesked, hvis der opstod en fejl under datahentning - Sand/falsk?
   if (error) return <p>Error: {error.message}</p>;
 
   return (

@@ -1,4 +1,4 @@
-import useFetchStays from "../../hooks/useFetchStays"; // Hook til at hente data fra backend
+import useFetchStays from "../../hooks/useFetchStays";
 import DynamicHeader from "../../components/header/dynamicHeader";
 import TextSection from "../../components/text-section/textSection";
 import FullSectionComponent from "../../components/text-section/fullSectionOrder";

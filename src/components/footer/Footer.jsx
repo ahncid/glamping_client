@@ -1,4 +1,4 @@
-import { icons } from "../../services/icons"; // Importer ikonerne fra icons.jsx
+import { icons } from "../../services/icons";
 import styles from "./Footer.module.css";
 
 const Footer = () => {

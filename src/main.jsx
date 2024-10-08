@@ -18,3 +18,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+// React context providers til at håndtere globale tilstande.
+// Man undgår props drilling, fordi der her opbevares og deles data som flere komponenter har brug for.

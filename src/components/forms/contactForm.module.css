@@ -87,6 +87,10 @@ h6 {
   .formGroup textarea {
     width: 400px;
   }
+
+  .form {
+    font-size: 32px;
+  }
 }
 
 /* Desktop: Skærme bredere end 1024px */

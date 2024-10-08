@@ -1,4 +1,3 @@
-// App.js
 import { useRoutes, Navigate } from "react-router-dom";
 import Navigation from "./components/navigation/GlobalNavigation";
 import Footer from "./components/footer/Footer";

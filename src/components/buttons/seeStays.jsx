@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom"; // Importer useNavigate for navigation
+import { useNavigate } from "react-router-dom";
 import styles from "./seeStays.module.css";
 
 function SeeStays({ text, destination, onClick }) {
-  const navigate = useNavigate(); // Brug useNavigate til navigation
+  const navigate = useNavigate();
 
   const handleClick = () => {
     if (onClick) {
