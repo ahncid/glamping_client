@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import styles from "./reviews.module.css";
 import { serverPath } from "../../services/settings";
-
+//Funktionel komponent, (funktionel fordi den er skrevet som en funktion)
+//bruger usestate og useeffect, til at definere tilstand og effekter for at hente data.
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
 
@@ -19,6 +20,7 @@ const Reviews = () => {
     getReviews(); // Kald funktionen for at hente anmeldelserne
   }, []);
 
+  // funktionen returnerer JSX, og beskriver hvordan komponenten skal rendere UI'en baseret på Reviews.
   return (
     <div className={styles.reviews}>
       <div className={styles.reviewList}>
