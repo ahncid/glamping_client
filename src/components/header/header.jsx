@@ -1,7 +1,13 @@
 import styles from "./header.module.css";
 import BookButton from "../buttons/BookButton";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
+  const goto = () => {
+    navigate("/kontakt"); // Naviger til den angivne destination
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.centerContent}>
@@ -10,7 +16,7 @@ function Header() {
           <span className={styles.smaller}>Gittes</span>
           <span className={styles.larger}>Glamping</span>
         </h1>
-        <BookButton destination="/kontakt" />
+        <BookButton onClick={goto} />
       </div>
     </header>
   );

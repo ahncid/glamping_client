@@ -1,4 +1,3 @@
-// src/services/icons.js
 import {
   FaBars,
   FaXmark,
