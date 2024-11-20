@@ -34,7 +34,7 @@ const ActivityPage = () => {
   return (
     <div>
       {/* DynamicHeader-komponenten bruges til at vise et dynamisk header-billede og en titel for aktivitetsiden */}
-      <DynamicHeader backgroundImage="/image_04.jpg" title="Aktiviteter" />
+      <DynamicHeader backgroundImage="image_04.jpg" title="Aktiviteter" />
 
       {/* TextSection-komponenten viser en beskrivelse af de aktiviteter, der tilbydes */}
       <TextSection

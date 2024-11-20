@@ -16,7 +16,7 @@ const HomePage = () => {
       <div className={styles.imageContainer}>
         {" "}
         <img
-          src="/public/gitte.jpg"
+         src={`${import.meta.env.BASE_URL}gitte.jpg`}
           alt="Gitte"
           className={styles.imageOfGitte}
         />

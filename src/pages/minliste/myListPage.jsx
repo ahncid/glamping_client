@@ -4,6 +4,7 @@ import DynamicHeader from "../../components/header/dynamicHeader";
 import styles from "./myListPage.module.css";
 import useFetchActivities from "../../hooks/useFetchActivities";
 
+
 const MinListePage = () => {
   // Destrukturering af state-værdier fra useLikedActivities-context
   // likedActivityIds: Array der indeholder IDs på de aktiviteter, som brugeren har liket
@@ -31,7 +32,8 @@ const MinListePage = () => {
   return (
     <div>
       {/* DynamicHeader-komponenten bruges til at vise et dynamisk header-billede og titel */}
-      <DynamicHeader backgroundImage="/image_05.jpg" title="Min liste" />
+      <DynamicHeader backgroundImage="image_05.jpg" title="Min liste" />
+
 
       {/* Viser antal likede aktiviteter */}
       <div className={styles.textContainerList}>

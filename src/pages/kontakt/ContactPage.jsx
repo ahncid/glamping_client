@@ -5,7 +5,8 @@ import ContactForm from "../../components/forms/ContactForm";
 const ContactPage = () => {
   return (
     <div>
-      <DynamicHeader backgroundImage="/image_03.jpg" title="Kontakt Gitte" />
+<DynamicHeader backgroundImage="image_03.jpg" title="Kontakt Gitte" />
+
       <TextSection
         title="Vil du booke et ophold? 
 Eller har du blot et spørgsmål?"

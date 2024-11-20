@@ -26,7 +26,8 @@ const OpholdPage = () => {
 
   return (
     <div>
-      <DynamicHeader backgroundImage="/image_01.jpg" title="Vores Ophold" />
+<DynamicHeader backgroundImage="image_01.jpg" title="Vores Ophold" />
+
       <TextSection
         title="Vi har ophold til enhver smag"
         content="Vores glampingophold er skabt til at tilbyde en kombination af eventyr og afslapning. Det er den ideelle flugt fra byens støj og stress, og det perfekte sted at genoplade batterierne i en naturskøn indstilling.

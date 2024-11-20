@@ -23,7 +23,11 @@ const Footer = () => {
         </a>
       </div>
       <div className={styles.logoContainer}>
-        <img src="/public/logo.png" alt="Logo" className={styles.logo} />
+      <img
+  src={`${import.meta.env.BASE_URL}logo.png`}
+  alt="Logo"
+  className={styles.logo}
+/>
         <h2>Gittes Glamping</h2>
       </div>
     </footer>

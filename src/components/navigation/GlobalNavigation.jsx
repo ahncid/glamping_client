@@ -21,7 +21,11 @@ const Navigation = () => {
       {!isHomePage && (
         <div className={styles.logo}>
           <Link to="/">
-            <img src="/logo.png" alt="Glamping Logo" />
+          <img
+  src={`${import.meta.env.BASE_URL}logo.png`}
+  alt="Glamping-Logo"
+  className={styles.logo}
+/>
           </Link>
         </div>
       )}
