@@ -9,7 +9,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/glamping_client">
+    <BrowserRouter>
       <AuthContextProvider>
         <LikeProvider>
           <App />
