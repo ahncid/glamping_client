@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ahncid.github.io/glamping-client",
+  "homepage": "https://ahncid.github.io/glamping_client",
   "scripts": {
     "dev": "vite",
     "dev extern": "vite --host",
-    "build": "vite build",
+    "build": "vite build --mode production",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
