@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ahncid.github.io/glamping_client",
+  "homepage": "https://ahncid.github.io/glamping_client/",
   "scripts": {
     "dev": "vite",
     "dev extern": "vite --host",
