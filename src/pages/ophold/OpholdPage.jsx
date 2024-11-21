@@ -12,13 +12,14 @@ const RenderSections = ({ stays }) => {
           title={stay.title}
           numberOfPersons={stay.numberOfPersons}
           price={stay.price}
-          backgroundImage={stay.image}
+          backgroundImage={`/stays/${stay.image}`} // Opdatering til relativ sti
           destination={`/ophold/${stay._id}`}
         />
       ))}
     </>
   );
 };
+
 
 const OpholdPage = () => {
   const { stays, loading, error } = useFetchStays(); // Henter stays-data fra backend

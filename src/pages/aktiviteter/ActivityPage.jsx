@@ -44,17 +44,18 @@ const ActivityPage = () => {
 
       {/* Mapper gennem activities arrayet og renderer en ActivitySection for hver aktivitet */}
       {activities.map((activity) => (
-        <ActivitySection
-          key={activity._id} // Unikt ID for hver aktivitet
-          dynamicText={activity.title} // Titel på aktiviteten (tekst)
-          backgroundImage={getImageUrl(activity.image)} // Baggrundsbillede til aktiviteten
-          leftText1={activity.date} // Dato for aktiviteten (tekst)
-          leftText2={activity.time} // Tidspunkt for aktiviteten (tekst)
-          expandedText={activity.description} // Beskrivelse af aktiviteten (tekst)
-          isLiked={likedActivityIds.includes(activity._id)} // Boolean der angiver om aktiviteten er liket (kontrol med includes)
-          onToggleLike={() => toggleLike(activity)} // Funktion der toggler like-status for aktiviteten
-        />
-      ))}
+  <ActivitySection
+    key={activity._id} // Unikt ID for hver aktivitet
+    dynamicText={activity.title} // Titel på aktiviteten (tekst)
+    backgroundImage={`/activities/${activity.image}`} // Relativ sti til billedet
+    leftText1={activity.date} // Dato for aktiviteten (tekst)
+    leftText2={activity.time} // Tidspunkt for aktiviteten (tekst)
+    expandedText={activity.description} // Beskrivelse af aktiviteten (tekst)
+    isLiked={likedActivityIds.includes(activity._id)} // Boolean der angiver om aktiviteten er liket
+    onToggleLike={() => toggleLike(activity)} // Funktion der toggler like-status for aktiviteten
+  />
+))}
+
     </div>
   );
 };
