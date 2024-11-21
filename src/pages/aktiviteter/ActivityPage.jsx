@@ -47,7 +47,7 @@ const ActivityPage = () => {
   <ActivitySection
     key={activity._id} // Unikt ID for hver aktivitet
     dynamicText={activity.title} // Titel på aktiviteten (tekst)
-    backgroundImage={`/activities/${activity.image}`} // Relativ sti til billedet
+    backgroundImage={activity.image}  // Relativ sti til billedet
     leftText1={activity.date} // Dato for aktiviteten (tekst)
     leftText2={activity.time} // Tidspunkt for aktiviteten (tekst)
     expandedText={activity.description} // Beskrivelse af aktiviteten (tekst)

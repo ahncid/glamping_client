@@ -12,13 +12,14 @@ const RenderSections = ({ stays }) => {
           title={stay.title}
           numberOfPersons={stay.numberOfPersons}
           price={stay.price}
-          backgroundImage={`/stays/${stay.image}`} // Opdatering til relativ sti
+          backgroundImage={stay.image} 
           destination={`/ophold/${stay._id}`}
         />
       ))}
     </>
   );
 };
+
 
 
 const OpholdPage = () => {
