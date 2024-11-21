@@ -12,13 +12,14 @@ const RenderSections = ({ stays }) => {
           title={stay.title}
           numberOfPersons={stay.numberOfPersons}
           price={stay.price}
-          backgroundImage={`${process.env.PUBLIC_URL}${stay.image}`}
+          backgroundImage={`${import.meta.env.BASE_URL}${stay.image}`} 
           destination={`/ophold/${stay._id}`}
         />
       ))}
     </>
   );
 };
+
 
 
 

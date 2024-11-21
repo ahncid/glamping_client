@@ -45,16 +45,17 @@ const ActivityPage = () => {
       {/* Mapper gennem activities arrayet og renderer en ActivitySection for hver aktivitet */}
       {activities.map((activity) => (
   <ActivitySection
-    key={activity._id} // Unikt ID for hver aktivitet
-    dynamicText={activity.title} // Titel på aktiviteten (tekst)
-    backgroundImage={`${process.env.PUBLIC_URL}${activity.image}`}
-    leftText1={activity.date} // Dato for aktiviteten (tekst)
-    leftText2={activity.time} // Tidspunkt for aktiviteten (tekst)
-    expandedText={activity.description} // Beskrivelse af aktiviteten (tekst)
-    isLiked={likedActivityIds.includes(activity._id)} // Boolean der angiver om aktiviteten er liket
-    onToggleLike={() => toggleLike(activity)} // Funktion der toggler like-status for aktiviteten
+    key={activity._id}
+    dynamicText={activity.title}
+    backgroundImage={`${import.meta.env.BASE_URL}${activity.image}`} 
+    leftText1={activity.date}
+    leftText2={activity.time}
+    expandedText={activity.description}
+    isLiked={likedActivityIds.includes(activity._id)}
+    onToggleLike={() => toggleLike(activity)}
   />
 ))}
+
 
     </div>
   );
