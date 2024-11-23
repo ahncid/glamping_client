@@ -49,7 +49,9 @@ function ContactForm() {
 
   // Funktion til at håndtere "Tilbage"-knappen, omdirigerer til forsiden
   const handleBackToForm = () => {
-    window.location.href = `${import.meta.env.BASE_URL}#/`;
+    window.location.href = `${window.location.origin}${
+      import.meta.env.BASE_URL
+    }#/`;
   };
 
   // Hvis formularen er blevet indsendt, vis en bekræftelsesbesked
