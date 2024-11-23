@@ -4,13 +4,17 @@ import DynamicHeader from "../../components/header/dynamicHeader";
 import styles from "./myListPage.module.css";
 import useFetchActivities from "../../hooks/useFetchActivities";
 
-
 const MinListePage = () => {
   // Destrukturering af state-værdier fra useLikedActivities-context
   // likedActivityIds: Array der indeholder IDs på de aktiviteter, som brugeren har liket
   // toggleLike: Funktion til at tilføje eller fjerne et like fra en aktivitet
   const { likedActivityIds, toggleLike } = useLikedActivities();
-
+  const getImageUrl = (image) => {
+    if (!image) return null; // Hvis der ikke er noget billede, returneres null
+    return image.startsWith("http")
+      ? image // Hvis det allerede er en fuld URL, returneres den
+      : `${import.meta.env.BASE_URL}${image}`; // Ellers tilføjes base-URL'en
+  };
   // Destrukturering af state-værdier fra custom hook "useFetchActivities"
   // activities: Array af aktiviteter hentet fra API
   // loading: Boolean der indikerer, om data stadig hentes
@@ -34,7 +38,6 @@ const MinListePage = () => {
       {/* DynamicHeader-komponenten bruges til at vise et dynamisk header-billede og titel */}
       <DynamicHeader backgroundImage="image_05.jpg" title="Min liste" />
 
-
       {/* Viser antal likede aktiviteter */}
       <div className={styles.textContainerList}>
         <h6>Antal aktiviteter på listen:</h6> <p>{likedActivities.length}</p>
@@ -46,14 +49,14 @@ const MinListePage = () => {
           {/* Mapper gennem likedActivities arrayet og renderer en ActivitySection for hver aktivitet */}
           {likedActivities.map((activity) => (
             <ActivitySection
-              key={activity._id} // Unikt ID for hver aktivitet
-              dynamicText={activity.title} // Titel på aktiviteten
-              backgroundImage={activity.image} // Billede til baggrund
-              leftText1={activity.date} // Dato for aktiviteten
-              leftText2={activity.time} // Tidspunkt for aktiviteten
-              expandedText={activity.description} // Udvidet tekst/beskrivelse af aktiviteten
-              isLiked={true} // Markerer at aktiviteten er liket
-              onToggleLike={() => toggleLike(activity)} // Toggler like-status på aktiviteten
+              key={activity._id}
+              dynamicText={activity.title}
+              backgroundImage={getImageUrl(activity.image)} // Brug den korrekte funktion
+              leftText1={activity.date}
+              leftText2={activity.time}
+              expandedText={activity.description}
+              isLiked={true}
+              onToggleLike={() => toggleLike(activity)}
             />
           ))}
         </>
