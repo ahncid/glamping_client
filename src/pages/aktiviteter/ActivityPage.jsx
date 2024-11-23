@@ -22,7 +22,9 @@ const ActivityPage = () => {
   // Hvis det ikke er en fuld URL, præfikses det med serverens base URL
   const getImageUrl = (image) => {
     if (!image) return null; // Hvis der ikke er noget billede, returneres null
-    return image.startsWith("http") ? image : `${serverPath}${image}`;
+    return image.startsWith("http")
+      ? image // Hvis det allerede er en fuld URL, returneres den
+      : `${import.meta.env.BASE_URL}${image}`; // Ellers tilføjes base-URL'en
   };
 
   // Conditional rendering: Viser en loading-besked, hvis data stadig hentes - Sand/falsk?
@@ -44,19 +46,17 @@ const ActivityPage = () => {
 
       {/* Mapper gennem activities arrayet og renderer en ActivitySection for hver aktivitet */}
       {activities.map((activity) => (
-  <ActivitySection
-    key={activity._id}
-    dynamicText={activity.title}
-    backgroundImage={`${import.meta.env.BASE_URL}${activity.image}`} 
-    leftText1={activity.date}
-    leftText2={activity.time}
-    expandedText={activity.description}
-    isLiked={likedActivityIds.includes(activity._id)}
-    onToggleLike={() => toggleLike(activity)}
-  />
-))}
-
-
+        <ActivitySection
+          key={activity._id}
+          dynamicText={activity.title}
+          backgroundImage={getImageUrl(activity.image)}
+          leftText1={activity.date}
+          leftText2={activity.time}
+          expandedText={activity.description}
+          isLiked={likedActivityIds.includes(activity._id)}
+          onToggleLike={() => toggleLike(activity)}
+        />
+      ))}
     </div>
   );
 };
