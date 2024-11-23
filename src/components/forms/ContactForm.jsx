@@ -49,7 +49,7 @@ function ContactForm() {
 
   // Funktion til at håndtere "Tilbage"-knappen, omdirigerer til forsiden
   const handleBackToForm = () => {
-    window.location.href = "/"; // Omdirigering til forsiden
+    window.location.href = import.meta.env.BASE_URL;
   };
 
   // Hvis formularen er blevet indsendt, vis en bekræftelsesbesked
