@@ -4,6 +4,7 @@ import DynamicHeader from "../../components/header/dynamicHeader";
 import TextSection from "../../components/text-section/textSection";
 import { useLikedActivities } from "../../context/likeContext";
 import { serverPath } from "../../services/settings";
+import { getImageUrl } from "../../../utils/getImageHelper";
 
 const ActivityPage = () => {
   // Destrukturering af state-værdier fra custom hook "useFetchActivities"
@@ -16,16 +17,6 @@ const ActivityPage = () => {
   // likedActivityIds: Array af IDs for de aktiviteter, som brugeren har liket
   // toggleLike: Funktion der tilføjer eller fjerner et like fra en aktivitet
   const { likedActivityIds, toggleLike } = useLikedActivities();
-
-  // Funktion der genererer den korrekte URL for billeder af aktiviteter
-  // Ternary operator bruges til at returnere billedets fulde URL, hvis det allerede er en komplet HTTP URL
-  // Hvis det ikke er en fuld URL, præfikses det med serverens base URL
-  const getImageUrl = (image) => {
-    if (!image) return null; // Hvis der ikke er noget billede, returneres null
-    return image.startsWith("http")
-      ? image // Hvis det allerede er en fuld URL, returneres den
-      : `${import.meta.env.BASE_URL}${image}`; // Ellers tilføjes base-URL'en
-  };
 
   // Conditional rendering: Viser en loading-besked, hvis data stadig hentes - Sand/falsk?
   if (loading) return <p>Loading...</p>;

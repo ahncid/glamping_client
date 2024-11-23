@@ -3,18 +3,14 @@ import ActivitySection from "../../components/text-section/activitySection";
 import DynamicHeader from "../../components/header/dynamicHeader";
 import styles from "./myListPage.module.css";
 import useFetchActivities from "../../hooks/useFetchActivities";
+import { getImageUrl } from "../../../utils/getImageHelper";
 
 const MinListePage = () => {
   // Destrukturering af state-værdier fra useLikedActivities-context
   // likedActivityIds: Array der indeholder IDs på de aktiviteter, som brugeren har liket
   // toggleLike: Funktion til at tilføje eller fjerne et like fra en aktivitet
   const { likedActivityIds, toggleLike } = useLikedActivities();
-  const getImageUrl = (image) => {
-    if (!image) return null; // Hvis der ikke er noget billede, returneres null
-    return image.startsWith("http")
-      ? image // Hvis det allerede er en fuld URL, returneres den
-      : `${import.meta.env.BASE_URL}${image}`; // Ellers tilføjes base-URL'en
-  };
+
   // Destrukturering af state-værdier fra custom hook "useFetchActivities"
   // activities: Array af aktiviteter hentet fra API
   // loading: Boolean der indikerer, om data stadig hentes

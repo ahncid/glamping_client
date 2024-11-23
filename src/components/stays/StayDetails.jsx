@@ -1,12 +1,17 @@
 import styles from "./stayDetails.module.css";
 import BookButton from "../buttons/BookButton";
+import { getImageUrl } from "../../../utils/getImageHelper";
 
 const StayDetails = ({ stay, customText }) => {
   return (
     <div className={styles.container}>
       {/* Image Container with Overlay */}
       <div className={styles.imageContainer}>
-        <img src={stay.image} alt={stay.title} className={styles.image} />
+        <img
+          src={getImageUrl(stay.image)}
+          alt={stay.title}
+          className={styles.image}
+        />
         <div className={styles.overlay}></div>
         <h2 className={styles.stayTitle}>{stay.title}</h2>
       </div>
